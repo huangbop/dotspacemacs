@@ -167,9 +167,6 @@ layers configuration."
 
   (global-set-key (kbd "M-s g") 'grep)
 
-  (global-set-key (kbd "C-M-,") 'previous-buffer)
-  (global-set-key (kbd "C-M-.") 'next-buffer)
-
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
