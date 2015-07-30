@@ -169,6 +169,12 @@ layers configuration."
 
   (global-set-key (kbd "M-s g") 'grep)
 
+  (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+  (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+  (global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
+  (global-set-key (kbd "C-S-m") 'mc/skip-to-previous-like-this)
+  (global-set-key (kbd "C-?") 'mc/skip-to-next-like-this )
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
