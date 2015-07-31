@@ -175,6 +175,10 @@ layers configuration."
   (global-set-key (kbd "C-S-n") 'mc/skip-to-previous-like-this)
   (global-set-key (kbd "C-S-m") 'mc/skip-to-next-like-this )
 
+  (add-hook 'python-mode-hook (lambda ()
+                                (define-key python-mode-map (kbd "M-,") 'anaconda-nav-pop-marker)
+                                (define-key python-mode-map (kbd "M-.") 'anaconda-mode-goto)))
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
