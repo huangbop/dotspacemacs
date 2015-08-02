@@ -179,6 +179,9 @@ layers configuration."
                                 (define-key python-mode-map (kbd "M-,") 'anaconda-nav-pop-marker)
                                 (define-key python-mode-map (kbd "M-.") 'anaconda-mode-goto)))
 
+  (require 'move-text)
+  (move-text-default-bindings)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
