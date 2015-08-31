@@ -21,7 +21,7 @@
      better-defaults
      emacs-lisp
      git
-     ;; markdown
+     markdown
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -183,6 +183,8 @@ layers configuration."
 
   (require 'move-text)
   (move-text-default-bindings)
+
+  (setq markdown-command "python -m markdown")
 
   )
 
