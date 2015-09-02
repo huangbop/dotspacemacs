@@ -186,6 +186,8 @@ layers configuration."
 
   (setq markdown-command "python -m markdown")
 
+  (setq c-default-style "linux")
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
