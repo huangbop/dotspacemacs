@@ -186,7 +186,8 @@ layers configuration."
 
   (setq markdown-command "python -m markdown")
 
-  (setq c-default-style "linux")
+  (setq c-default-style "linux"
+        c-basic-offset 4)
 
   )
 
