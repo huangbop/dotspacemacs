@@ -189,6 +189,8 @@ layers configuration."
   (setq c-default-style "linux"
         c-basic-offset 4)
 
+  (global-set-key (kbd "C-h") 'evil-ace-jump-word-mode)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
