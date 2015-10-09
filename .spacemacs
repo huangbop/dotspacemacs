@@ -189,7 +189,7 @@ layers configuration."
   (setq c-default-style "linux"
         c-basic-offset 4)
 
-  (global-set-key (kbd "C-h") 'evil-ace-jump-word-mode)
+  (global-set-key (kbd "C-l") 'evil-ace-jump-word-mode)
 
   )
 
