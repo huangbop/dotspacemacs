@@ -209,6 +209,8 @@ layers configuration. You are free to put any user code."
 
   (global-set-key (kbd "M-s g") 'grep)
 
+  (global-set-key (kbd "C-l") 'avy-goto-word-or-subword-1)
+
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   (global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
