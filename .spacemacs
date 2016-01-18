@@ -225,6 +225,8 @@ layers configuration. You are free to put any user code."
   (setq c-default-style "linux"
         c-basic-offset 4)
 
+  (setq web-mode-markup-indent-offset 2)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
