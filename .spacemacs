@@ -226,6 +226,8 @@ layers configuration. You are free to put any user code."
         c-basic-offset 4)
 
   (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq css-indent-offset 2)
 
   )
 
