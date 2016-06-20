@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: crx
+# key: crx
+# --
+`(file-name-nondirectory (buffer-file-name))`
+`(format-time-string "%Y-%m-%d")`
+$0
