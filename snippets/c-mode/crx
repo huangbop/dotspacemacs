@@ -2,6 +2,14 @@
 # name: crx
 # key: crx
 # --
-`(file-name-nondirectory (buffer-file-name))`
-`(format-time-string "%Y-%m-%d")`
+// Copyright (c) MemoRise Technologies Co., Ltd. 2016-2017. All rights reserved.
+
+// File name:     `(file-name-nondirectory (buffer-file-name))`
+//
+// Description:   $1
+//
+// Date:          Author:
+// `(format-time-string "%Y-%m-%d")`     Huang Bo
+//
+// ----------------------------------------------------------------------------
 $0
