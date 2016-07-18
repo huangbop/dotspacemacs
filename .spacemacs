@@ -257,6 +257,8 @@ you should place your code here."
 
   (global-centered-cursor-mode 1)
 
+  (setq dotspacemacs-distinguish-gui-tab t)
+
   (require 'move-text)
   (move-text-default-bindings)
 
