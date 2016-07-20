@@ -259,6 +259,10 @@ you should place your code here."
 
   (setq dotspacemacs-distinguish-gui-tab t)
 
+  (global-set-key (kbd "C-x j") 'dired-jump)
+
+  (global-set-key (kbd "C-l") 'avy-goto-word-or-subword-1)
+
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 
