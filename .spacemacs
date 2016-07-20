@@ -78,7 +78,7 @@ values."
    ;; variable is `emacs' then the `holy-mode' is enabled at startup. `hybrid'
    ;; uses emacs key bindings for vim's insert mode, but otherwise leaves evil
    ;; unchanged. (default 'vim)
-   dotspacemacs-editing-style 'hybrid
+   dotspacemacs-editing-style 'vim
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -258,9 +258,6 @@ you should place your code here."
   (global-centered-cursor-mode 1)
 
   (setq dotspacemacs-distinguish-gui-tab t)
-
-  (require 'move-text)
-  (move-text-default-bindings)
 
   (setq markdown-command "python -m markdown")
 
