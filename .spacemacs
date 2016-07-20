@@ -259,6 +259,9 @@ you should place your code here."
 
   (setq dotspacemacs-distinguish-gui-tab t)
 
+  (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+  (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+
   (setq markdown-command "python -m markdown")
 
   (setq c-default-style "linux"
