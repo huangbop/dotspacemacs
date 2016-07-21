@@ -272,9 +272,9 @@ you should place your code here."
   (require 'move-text)
   (move-text-default-bindings)
 
-  (global-set-key (kbd "C-c a") 'evil-close-folds)
-  (global-set-key (kbd "C-c b") 'evil-open-folds)
-  (global-set-key (kbd "C-c t") 'evil-toggle-fold)
+  (global-set-key (kbd "C-c h") 'evil-close-folds)
+  (global-set-key (kbd "C-c l") 'evil-open-folds)
+  (global-set-key (kbd "C-c a") 'evil-toggle-fold)
 
   (setq markdown-command "python -m markdown")
 
