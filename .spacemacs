@@ -78,7 +78,7 @@ values."
    ;; variable is `emacs' then the `holy-mode' is enabled at startup. `hybrid'
    ;; uses emacs key bindings for vim's insert mode, but otherwise leaves evil
    ;; unchanged. (default 'vim)
-   dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style 'vim
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -257,24 +257,7 @@ you should place your code here."
 
   (global-centered-cursor-mode 1)
 
-  (global-set-key (kbd "C-x j") 'dired-jump)
-
-  (global-set-key (kbd "M-s g") 'grep)
-
-  (global-set-key (kbd "C-l") 'avy-goto-word-or-subword-1)
-
-  (global-set-key (kbd "C->") 'mc/mark-next-like-this)
-  (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-  (global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
-  (global-set-key (kbd "C-S-n") 'mc/skip-to-previous-like-this)
-  (global-set-key (kbd "C-S-m") 'mc/skip-to-next-like-this )
-
-  (require 'move-text)
-  (move-text-default-bindings)
-
-  (global-set-key (kbd "C-c h") 'evil-close-folds)
-  (global-set-key (kbd "C-c l") 'evil-open-folds)
-  (global-set-key (kbd "C-c a") 'evil-toggle-fold)
+  (setq dotspacemacs-distinguish-gui-tab t)
 
   (setq markdown-command "python -m markdown")
 
