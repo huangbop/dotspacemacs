@@ -49,6 +49,7 @@ values."
      ;; spell-checking
      syntax-checking
      version-control
+     racket
      python
      html
      javascript
