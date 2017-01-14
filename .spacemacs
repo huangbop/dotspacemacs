@@ -318,6 +318,8 @@ you should place your code here."
 
   (setq dotspacemacs-distinguish-gui-tab t)
 
+  (setq fci-rule-column 120)
+
   (setq markdown-command "python -m markdown")
 
   (setq c-default-style "linux"
