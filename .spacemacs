@@ -47,6 +47,7 @@ values."
             shell-default-height 30
             shell-default-position 'bottom)
      spell-checking
+     (spell-checking :variables spell-checking-enable-by-default nil)
      syntax-checking
      version-control
      racket
@@ -319,6 +320,8 @@ you should place your code here."
   (setq dotspacemacs-distinguish-gui-tab t)
 
   (setq fci-rule-column 120)
+
+  (setq ispell-dictionary "american")
 
   (setq markdown-command "python -m markdown")
 
