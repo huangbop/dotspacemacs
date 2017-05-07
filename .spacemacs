@@ -337,6 +337,8 @@ you should place your code here."
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
 
+  (global-flycheck-mode -1)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
