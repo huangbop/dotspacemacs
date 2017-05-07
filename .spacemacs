@@ -327,6 +327,7 @@ you should place your code here."
 
   (setq markdown-command "python -m markdown")
 
+  (setq-default tab-width 8)
   (setq c-default-style "linux"
         c-basic-offset 4)
 
