@@ -340,6 +340,8 @@ you should place your code here."
 
   (global-flycheck-mode -1)
 
+  (setq ggtags-highlight-tag nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
