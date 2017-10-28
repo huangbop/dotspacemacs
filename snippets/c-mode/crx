@@ -2,14 +2,16 @@
 # name: crx
 # key: crx
 # --
-// Copyright (c) MemoRise Technologies Co., Ltd. 2016-2017. All rights reserved.
-
-// File name:     `(file-name-nondirectory (buffer-file-name))`
+//--------------------------------------------------------------------------------
+// Copyright (c) Dera Corporation `(format-time-string "%Y")` - All rights reserved
 //
-// Description:   $1
+// This program contains confidential and proprietary information, and may
+// NOT be reproduced or transmitted, in whole or in part, in any form, or
+// by any means electronic, mechanical, photo-optical, or otherwise, and may
+// NOT be translated into another language without the express written
+// permission from Dera Corporation.
 //
-// Date:          Author:
-// `(format-time-string "%Y-%m-%d")`     Huang Bo
-//
-// ----------------------------------------------------------------------------
+// Author: Huang Bo
+// Date  : `(format-time-string "%Y-%m-%d")`
+//--------------------------------------------------------------------------------
 $0
