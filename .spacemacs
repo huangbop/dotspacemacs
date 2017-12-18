@@ -62,6 +62,7 @@ values."
      yaml
      nginx
      docker
+     plantuml
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -346,6 +347,8 @@ you should place your code here."
   (global-flycheck-mode -1)
 
   (setq ggtags-highlight-tag nil)
+
+  (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
 
   )
 
