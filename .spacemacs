@@ -350,6 +350,8 @@ you should place your code here."
 
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
 
+  (setq helm-input-idle-delay 0.1)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
