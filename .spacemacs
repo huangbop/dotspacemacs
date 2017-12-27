@@ -63,6 +63,10 @@ values."
      nginx
      docker
      plantuml
+     latex
+     (latex :variables latex-build-command "LaTeX")
+     (latex :variables latex-enable-auto-fill t)
+     (latex :variables latex-enable-folding t)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -351,6 +355,9 @@ you should place your code here."
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
 
   (setq helm-input-idle-delay 0.1)
+
+  (add-hook 'doc-view-mode-hook 'auto-revert-mode)
+  (setq TeX-engine 'xetex)
 
   )
 
