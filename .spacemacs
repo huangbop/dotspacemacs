@@ -354,7 +354,7 @@ you should place your code here."
 
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
 
-  (setq helm-input-idle-delay 0.1)
+  (setq helm-input-idle-delay 0.12)
 
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   (setq TeX-engine 'xetex)
