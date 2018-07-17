@@ -146,6 +146,7 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          twilight-anti-bright
+                         dracula
                          monokai
                          adwaita
                          leuven
@@ -358,6 +359,10 @@ you should place your code here."
 
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   (setq TeX-engine 'xetex)
+
+  (font-lock-add-keywords
+   'c-mode
+   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)))
 
   )
 
