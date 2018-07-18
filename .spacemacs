@@ -354,6 +354,7 @@ you should place your code here."
   (setq ggtags-highlight-tag nil)
 
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
+  (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-gmake-mode))
 
   (setq helm-input-idle-delay 0.12)
 
