@@ -363,7 +363,9 @@ you should place your code here."
 
   (font-lock-add-keywords
    'c-mode
-   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)))
+   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
+     ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
+     ))
 
   )
 
