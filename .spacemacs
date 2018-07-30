@@ -67,6 +67,7 @@ values."
      (latex :variables latex-build-command "LaTeX")
      (latex :variables latex-enable-auto-fill t)
      (latex :variables latex-enable-folding t)
+     windows-scripts
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -148,6 +149,15 @@ values."
                          twilight-anti-bright
                          dracula
                          monokai
+                         ample
+                         sanityinc-tomorrow-eighties
+                         sanityinc-tomorrow-night
+                         sanityinc-tomorrow-bright
+                         gruvbox
+                         moe-dark
+                         flatui
+                         alect-light
+                         alect-light-alt
                          adwaita
                          leuven
                          whiteboard

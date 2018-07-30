@@ -2,16 +2,21 @@
 # name: crx
 # key: crx
 # --
-//--------------------------------------------------------------------------------
-// Copyright (c) Dera Corporation `(format-time-string "%Y")` - All rights reserved
-//
-// This program contains confidential and proprietary information, and may
-// NOT be reproduced or transmitted, in whole or in part, in any form, or
-// by any means electronic, mechanical, photo-optical, or otherwise, and may
-// NOT be translated into another language without the express written
-// permission from Dera Corporation.
-//
-// Author: Huang Bo
-// Date  : `(format-time-string "%Y-%m-%d")`
-//--------------------------------------------------------------------------------
-$0
+/**************************************************************************$1
+ * Copyright (c) Dera Corporation `(format-time-string "%Y")` - All rights reserved
+ *
+ * This program contains confidential and proprietary information, and may
+ * NOT be reproduced or transmitted, in whole or in part, in any form, or
+ * by any means electronic, mechanical, photo-optical, or otherwise, and may
+ * permission from Dera Corporation.
+ *
+ * @file `(file-relative-name (buffer-file-name))`
+ *
+ * @brief $2
+ *
+ * @author huangbo
+ *
+ * @date `(format-time-string "%Y-%m-%d")`
+ *
+ *****************************************************************************/
+ $0
