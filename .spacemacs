@@ -146,25 +146,25 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         twilight-anti-bright
-                         dracula
+                         sanityinc-tomorrow-eighties
                          monokai
                          ample
-                         sanityinc-tomorrow-eighties
-                         sanityinc-tomorrow-night
-                         sanityinc-tomorrow-bright
-                         gruvbox
                          moe-dark
-                         flatui
-                         alect-light
+                         twilight-anti-bright
+                         sanityinc-tomorrow-bright
+                         sanityinc-tomorrow-night
+                         dracula
                          alect-light-alt
+                         alect-light
+                         solarized-dark
+                         solarized-light
+                         spacemacs-light
+                         spacemacs-dark
+                         flatui
+                         gruvbox
                          adwaita
                          leuven
                          whiteboard
-                         solarized-light
-                         solarized-dark
-                         spacemacs-light
-                         spacemacs-dark
                          zenburn)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -366,7 +366,7 @@ you should place your code here."
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
   (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-gmake-mode))
 
-  (setq helm-input-idle-delay 0.12)
+  (setq helm-input-idle-delay 0.2)
 
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   (setq TeX-engine 'xetex)
