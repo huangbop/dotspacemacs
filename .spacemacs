@@ -58,15 +58,16 @@ values."
      django
      c-c++
      gtags
+     ;; (gtags :variables gtags-enable-by-default nil)
      shell
      yaml
      nginx
      docker
      plantuml
      latex
-     (latex :variables latex-build-command "LaTeX")
-     (latex :variables latex-enable-auto-fill t)
-     (latex :variables latex-enable-folding t)
+     (latex :variables latex-build-command "LaTeX"
+            latex-enable-auto-fill t
+            latex-enable-folding t)
      windows-scripts
      )
    ;; List of additional packages that will be installed without being
@@ -146,6 +147,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         solarized-light
                          sanityinc-tomorrow-eighties
                          monokai
                          ample
@@ -157,7 +159,6 @@ values."
                          alect-light-alt
                          alect-light
                          solarized-dark
-                         solarized-light
                          spacemacs-light
                          spacemacs-dark
                          flatui
