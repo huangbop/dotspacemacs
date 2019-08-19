@@ -388,6 +388,8 @@ you should place your code here."
      ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
      ))
 
+  ;; (setq projectile-git-submodule-command nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
