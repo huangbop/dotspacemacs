@@ -147,20 +147,21 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         solarized-light
-                         sanityinc-tomorrow-eighties
-                         monokai
-                         ample
-                         moe-dark
-                         twilight-anti-bright
                          sanityinc-tomorrow-bright
                          sanityinc-tomorrow-night
+                         sanityinc-tomorrow-eighties
+                         solarized-dark
+                         spacemacs-dark
+                         solarized-light
+                         ample
+                         monokai
+                         moe-dark
+                         twilight-anti-bright
                          dracula
                          alect-light-alt
                          alect-light
                          solarized-dark
                          spacemacs-light
-                         spacemacs-dark
                          flatui
                          gruvbox
                          adwaita
@@ -376,8 +377,6 @@ you should place your code here."
 
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
   (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-gmake-mode))
-
-  (setq helm-input-idle-delay 0.2)
 
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   (setq TeX-engine 'xetex)
