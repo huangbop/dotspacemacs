@@ -387,6 +387,8 @@ you should place your code here."
      ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
      ))
 
+  (setq org-plantuml-jar-path "~/plantuml.jar")
+
   ;; (setq projectile-git-submodule-command nil)
 
   )
