@@ -388,6 +388,7 @@ you should place your code here."
      ))
 
   (setq org-plantuml-jar-path "~/plantuml.jar")
+  (setq org-html-validation-link nil)
 
   ;; (setq projectile-git-submodule-command nil)
 
