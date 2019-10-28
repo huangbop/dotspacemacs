@@ -147,8 +147,8 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         sanityinc-tomorrow-bright
                          sanityinc-tomorrow-night
+                         sanityinc-tomorrow-bright
                          sanityinc-tomorrow-eighties
                          solarized-dark
                          spacemacs-dark
@@ -356,11 +356,15 @@ you should place your code here."
 
   (global-set-key (kbd "C-;") 'evil-avy-goto-word-or-subword-1)
 
+  (spacemacs/set-leader-keys (kbd ";") 'evil-show-marks)
+  (spacemacs/declare-prefix "o" "custom")
+  (spacemacs/set-leader-keys "o;" 'evil-show-marks)
+
   (setq ispell-dictionary "american")
 
   (setq markdown-command "python -m markdown")
 
-  (setq-default tab-width 8)
+  (setq-default tab-width 4)
   (setq c-default-style "linux"
         c-basic-offset 4)
 
