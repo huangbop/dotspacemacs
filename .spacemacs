@@ -394,6 +394,11 @@ you should place your code here."
   (setq org-plantuml-jar-path "~/plantuml.jar")
   (setq org-html-validation-link nil)
 
+  (with-eval-after-load "color-theme-sanityinc-tomorrow"
+    (custom-theme-set-faces
+     'sanityinc-tomorrow-night
+     '(iedit-occurrence ((t (:background "pink" :foreground "black" :weight bold))))))
+
   ;; (setq projectile-git-submodule-command nil)
 
   )
