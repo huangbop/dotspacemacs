@@ -397,7 +397,7 @@ you should place your code here."
   (with-eval-after-load "color-theme-sanityinc-tomorrow"
     (custom-theme-set-faces
      'sanityinc-tomorrow-night
-     '(iedit-occurrence ((t (:background "pink" :foreground "black" :weight bold))))))
+     '(iedit-occurrence ((t (:background "medium sea green" :foreground "black" :weight bold))))))
 
   ;; (setq projectile-git-submodule-command nil)
 
