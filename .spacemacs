@@ -355,8 +355,8 @@ you should place your code here."
   (setq fci-rule-column 120)
 
   (global-set-key (kbd "C-;") 'evil-avy-goto-word-or-subword-1)
+  (spacemacs/set-leader-keys (kbd ";") 'evil-avy-goto-word-or-subword-1)
 
-  (spacemacs/set-leader-keys (kbd ";") 'evil-show-marks)
   (spacemacs/declare-prefix "o" "custom")
   (spacemacs/set-leader-keys "o;" 'evil-show-marks)
 
