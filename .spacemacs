@@ -69,6 +69,7 @@ values."
             latex-enable-auto-fill t
             latex-enable-folding t)
      windows-scripts
+     evil-snipe
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -147,10 +148,10 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         solarized-dark
                          sanityinc-tomorrow-night
                          sanityinc-tomorrow-bright
                          sanityinc-tomorrow-eighties
-                         solarized-dark
                          spacemacs-dark
                          solarized-light
                          ample
@@ -399,7 +400,7 @@ you should place your code here."
      'sanityinc-tomorrow-night
      '(iedit-occurrence ((t (:background "medium sea green" :foreground "black" :weight bold))))))
 
-  ;; (setq projectile-git-submodule-command nil)
+  (setq projectile-git-submodule-command nil)
 
   )
 
