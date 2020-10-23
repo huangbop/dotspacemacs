@@ -392,6 +392,12 @@ you should place your code here."
      ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
      ))
 
+  (font-lock-add-keywords
+   'c++-mode
+   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
+     ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
+     ))
+
   (setq org-plantuml-jar-path "~/plantuml.jar")
   (setq org-html-validation-link nil)
 
