@@ -58,7 +58,7 @@ values."
      django
      c-c++
      gtags
-     ;; (gtags :variables gtags-enable-by-default nil)
+     (gtags :variables gtags-enable-by-default nil)
      shell
      yaml
      nginx
