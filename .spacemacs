@@ -40,7 +40,6 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
-     git
      markdown
      org
      (shell :variables
@@ -49,7 +48,8 @@ values."
      spell-checking
      (spell-checking :variables spell-checking-enable-by-default nil)
      syntax-checking
-     version-control
+     ;; git
+     ;; version-control
      common-lisp
      racket
      python
@@ -406,6 +406,7 @@ you should place your code here."
      'sanityinc-tomorrow-night
      '(iedit-occurrence ((t (:background "medium sea green" :foreground "black" :weight bold))))))
 
+  (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
   (setq projectile-git-submodule-command nil)
 
   )
