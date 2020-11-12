@@ -376,10 +376,6 @@ you should place your code here."
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
 
-  (global-flycheck-mode -1)
-
-  (setq ggtags-highlight-tag nil)
-
   (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
   (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-gmake-mode))
 
@@ -408,6 +404,13 @@ you should place your code here."
 
   (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
   (setq projectile-git-submodule-command nil)
+
+  (setq flycheck-python-flake8-executable "flake8")
+
+  (setq ggtags-highlight-tag nil)
+
+  (global-flycheck-mode -1)
+  (which-key-mode -1)
 
   )
 
