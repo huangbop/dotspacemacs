@@ -397,6 +397,10 @@ you should place your code here."
   (setq org-plantuml-jar-path "~/plantuml.jar")
   (setq org-html-validation-link nil)
 
+  (setq plantuml-default-exec-mode 'jar)
+  (setq plantuml-java-args (list "-Djava.awt.headless=true" "-jar"))
+  (setq plantuml-indent-level 4)
+
   (with-eval-after-load "color-theme-sanityinc-tomorrow"
     (custom-theme-set-faces
      'sanityinc-tomorrow-night
