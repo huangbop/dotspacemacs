@@ -38,21 +38,42 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
+     auto-completion
+     better-defaults
      emacs-lisp
      ;; git
      helm
      ;; lsp
-     ;; markdown
+     markdown
      multiple-cursors
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
-     ;; syntax-checking
+     org
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     spell-checking
+     (spell-checking :variables spell-checking-enable-by-default nil)
+     syntax-checking
      ;; version-control
+     common-lisp
+     racket
+     python
+     html
+     javascript
+     django
+     c-c++
+     gtags
+     (gtags :variables gtags-enable-by-default nil)
+     shell
+     yaml
+     nginx
+     docker
+     plantuml
+     latex
+     (latex :variables latex-build-command "LaTeX"
+            latex-enable-auto-fill t
+            latex-enable-folding t)
+     windows-scripts
+     evil-snipe
      treemacs)
 
 
@@ -211,8 +232,28 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light)
+      dotspacemacs-themes '(
+                         solarized-dark
+                         sanityinc-tomorrow-night
+                         sanityinc-tomorrow-bright
+                         sanityinc-tomorrow-eighties
+                         spacemacs-dark
+                         solarized-light
+                         ample
+                         monokai
+                         moe-dark
+                         twilight-anti-bright
+                         dracula
+                         alect-light-alt
+                         alect-light
+                         solarized-dark
+                         spacemacs-light
+                         flatui
+                         gruvbox
+                         adwaita
+                         leuven
+                         whiteboard
+                         zenburn)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
@@ -511,6 +552,72 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+
+  (setq dotspacemacs-distinguish-gui-tab t)
+
+  (setq fci-rule-column 120)
+
+  (global-set-key (kbd "C-;") 'evil-avy-goto-word-or-subword-1)
+  (spacemacs/set-leader-keys (kbd ";") 'evil-avy-goto-word-or-subword-1)
+
+  (spacemacs/declare-prefix "o" "custom")
+  (spacemacs/set-leader-keys "o;" 'evil-show-marks)
+
+  (setq ispell-dictionary "american")
+
+  (setq markdown-command "python -m markdown")
+
+  (setq-default tab-width 4)
+  (setq c-default-style "linux"
+        c-basic-offset 4)
+
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq css-indent-offset 2)
+
+  (setq-default js2-basic-offset 2)
+  (setq-default js-indent-level 2)
+
+  (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))
+  (add-to-list 'auto-mode-alist '("\\.mak\\'" . makefile-gmake-mode))
+
+  (add-hook 'doc-view-mode-hook 'auto-revert-mode)
+  (setq TeX-engine 'xetex)
+
+  (font-lock-add-keywords
+   'c-mode
+   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
+     ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
+     ))
+
+  (font-lock-add-keywords
+   'c++-mode
+   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
+     ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
+     ))
+
+  (setq org-plantuml-jar-path "~/plantuml.jar")
+  (setq org-html-validation-link nil)
+
+  (setq plantuml-default-exec-mode 'jar)
+  (setq plantuml-java-args (list "-Djava.awt.headless=true" "-jar"))
+  (setq plantuml-indent-level 4)
+
+  (with-eval-after-load "color-theme-sanityinc-tomorrow"
+    (custom-theme-set-faces
+     'sanityinc-tomorrow-night
+     '(iedit-occurrence ((t (:background "medium sea green" :foreground "black" :weight bold))))))
+
+  (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
+  (setq projectile-git-submodule-command nil)
+
+  (setq flycheck-python-flake8-executable "flake8")
+
+  (setq ggtags-highlight-tag nil)
+
+  (global-flycheck-mode -1)
+  (which-key-mode -1)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
