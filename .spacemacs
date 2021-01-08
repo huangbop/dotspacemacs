@@ -232,7 +232,7 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-      dotspacemacs-themes '(
+   dotspacemacs-themes '(
                          solarized-dark
                          sanityinc-tomorrow-night
                          sanityinc-tomorrow-bright
@@ -271,7 +271,7 @@ It should only modify the values of Spacemacs settings."
    ;; Default font or prioritized list of fonts. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("Consolas"
                                :size 10.0
                                :weight normal
                                :width normal)
@@ -608,15 +608,15 @@ before packages are loaded."
      'sanityinc-tomorrow-night
      '(iedit-occurrence ((t (:background "medium sea green" :foreground "black" :weight bold))))))
 
-  (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
-  (setq projectile-git-submodule-command nil)
+  ;; (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
+  ;; (setq projectile-git-submodule-command nil)
 
   (setq flycheck-python-flake8-executable "flake8")
 
   (setq ggtags-highlight-tag nil)
 
-  (global-flycheck-mode -1)
   (which-key-mode -1)
+  (global-flycheck-mode -1)
 
   )
 
