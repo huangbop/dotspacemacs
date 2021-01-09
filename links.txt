@@ -11,3 +11,6 @@ https://github.com/monochromegane/the_platinum_searcher
 
 # gzip & gmake
 http://gnuwin32.sourceforge.net/packages.html
+
+# clang
+https://releases.llvm.org/download.html

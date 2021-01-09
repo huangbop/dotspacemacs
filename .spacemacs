@@ -58,12 +58,17 @@ This function should only modify configuration layer settings."
      common-lisp
      racket
      python
-     (python :variables python-backend 'anaconda
+     (python :variables
+             python-backend 'anaconda
              python-formatter 'yapf)
      html
      javascript
      django
      c-c++
+     (c-c++ :variables
+            c-c++-adopt-subprojects t
+            c-c++-backend 'lsp-clangd
+            c-c++-lsp-enable-semantic-highlight 'rainbow)
      gtags
      (gtags :variables gtags-enable-by-default nil)
      shell
@@ -72,13 +77,13 @@ This function should only modify configuration layer settings."
      docker
      plantuml
      latex
-     (latex :variables latex-build-command "LaTeX"
+     (latex :variables
+            latex-build-command "LaTeX"
             latex-enable-auto-fill t
             latex-enable-folding t)
      windows-scripts
      evil-snipe
      treemacs)
-
 
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
