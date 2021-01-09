@@ -69,8 +69,8 @@ This function should only modify configuration layer settings."
             c-c++-adopt-subprojects t
             c-c++-backend 'lsp-clangd
             c-c++-lsp-enable-semantic-highlight 'rainbow)
-     gtags
-     (gtags :variables gtags-enable-by-default nil)
+     ;; gtags
+     ;; (gtags :variables gtags-enable-by-default nil)
      shell
      yaml
      nginx
@@ -616,12 +616,13 @@ before packages are loaded."
      'sanityinc-tomorrow-night
      '(iedit-occurrence ((t (:background "medium sea green" :foreground "black" :weight bold))))))
 
-  ;; (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
+  (setq projectile-indexing-method 'alien)
+  (setq projectile-git-command "d:/git/cmd/git ls-files -zco --exclude-standard")
   ;; (setq projectile-git-submodule-command nil)
 
   (setq flycheck-python-flake8-executable "flake8")
 
-  (setq ggtags-highlight-tag nil)
+  ;; (setq ggtags-highlight-tag nil)
 
   (which-key-mode -1)
 
