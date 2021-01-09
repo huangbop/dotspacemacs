@@ -1,6 +1,7 @@
 
 # spacemacs
 https://github.com/syl20bnr/spacemacs
+https://develop.spacemacs.org/
 
 # emacs
 https://ftp.gnu.org/gnu/emacs/windows/

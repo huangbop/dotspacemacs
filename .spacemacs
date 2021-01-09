@@ -43,7 +43,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      ;; git
      helm
-     ;; lsp
+     lsp
      markdown
      multiple-cursors
      org
@@ -53,10 +53,13 @@ This function should only modify configuration layer settings."
      spell-checking
      (spell-checking :variables spell-checking-enable-by-default nil)
      syntax-checking
+     (syntax-checking :variables syntax-checking-enable-by-default nil)
      ;; version-control
      common-lisp
      racket
      python
+     (python :variables python-backend 'anaconda
+             python-formatter 'yapf)
      html
      javascript
      django
@@ -584,17 +587,17 @@ before packages are loaded."
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   (setq TeX-engine 'xetex)
 
-  (font-lock-add-keywords
-   'c-mode
-   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
-     ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
-     ))
+  ;; (font-lock-add-keywords
+  ;;  'c-mode
+  ;;  '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
+  ;;    ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
+  ;;    ))
 
-  (font-lock-add-keywords
-   'c++-mode
-   '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
-     ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
-     ))
+  ;; (font-lock-add-keywords
+  ;;  'c++-mode
+  ;;  '(("\\<\\(\\sw+\\)(" 1 'font-lock-function-name-face)
+  ;;    ("\\(\\.\\|\\(->\\)\\)\\(\\sw+\\)" 3 'font-lock-variable-name-face)
+  ;;    ))
 
   (setq org-plantuml-jar-path "~/plantuml.jar")
   (setq org-html-validation-link nil)
@@ -616,7 +619,6 @@ before packages are loaded."
   (setq ggtags-highlight-tag nil)
 
   (which-key-mode -1)
-  (global-flycheck-mode -1)
 
   )
 
