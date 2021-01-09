@@ -1,0 +1,12 @@
+
+# spacemacs
+https://github.com/syl20bnr/spacemacs
+
+# emacs
+https://ftp.gnu.org/gnu/emacs/windows/
+
+# pt
+https://github.com/monochromegane/the_platinum_searcher
+
+# gzip & gmake
+http://gnuwin32.sourceforge.net/packages.html
